@@ -312,14 +312,7 @@ public class ViewJPanel1 extends javax.swing.JPanel {
           this.TextField4.setText(p1.getEmail());
            this.messagebox.setText(p1.getMessageBox());
           
-          this.jRadioButtonFemale.setEnabled(false);
-          this.TextField2.setEnabled(false);
-          this.TextField3.setEnabled(false);
-          this.TextField4.setEnabled(false);
-          this.jRadioButtonMale.setEnabled(false);
-          this.jRadioButtonOthers.setEnabled(false);
-          this.textFieldName.setEnabled(false);
-          this.messagebox.setEnabled(false);
+
    }
       
       public void disableALL(){

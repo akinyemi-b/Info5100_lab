@@ -267,8 +267,15 @@ public class FormJPanel extends javax.swing.JPanel {
                 displayMessage = "No First Name Entered";
             } else if (lastName.equals("")) {
                 displayMessage = "No Last Name Entered";
+            }else if(Email.equals("")){
+                displayMessage = "No Email Entered";
+                
+            }else if(messageBox.equals("")){
+                displayMessage = "Kindly Input your reason for registration";
+                
             } else if (Age.equals("")) {
                 displayMessage = "No Age Entered";
+            
             } else{
                 // Ensure the age is an integer
                 try {
@@ -302,7 +309,7 @@ public class FormJPanel extends javax.swing.JPanel {
            CardLayout layout = (CardLayout) this.bottomJPanel.getLayout();
            layout.next(bottomJPanel);
         }catch(NullPointerException ne){
-            String errorMessage ="You must enter values in Gender.";
+            String errorMessage ="Kindly pick your patient type";
             JOptionPane.showMessageDialog(this, errorMessage);
         } catch(Exception e){
             System.out.println("Exception has occurred.");
