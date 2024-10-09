@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.time.LocalDate;
+import java.util.Date;
 import javax.swing.ImageIcon;
 
 /**
@@ -17,6 +19,15 @@ public class Patient {
     private String Email;
     private String gender;
     private String patientType;
+    private Date dateChooser;
+
+    public Date getDateChooser() {
+        return dateChooser;
+    }
+
+    public void setDateChooser(Date dateChooser) {
+        this.dateChooser = dateChooser;
+    }
 
     public String getMessageBox() {
         return messageBox;
